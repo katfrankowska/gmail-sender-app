@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace gmail_sender_app
 {
-    public partial class Form1 : Form
+    public partial class SignEmail : Form
     {
-        public Form1()
+        public SignEmail()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
