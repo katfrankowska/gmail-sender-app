@@ -63,6 +63,26 @@ namespace gmail_sender_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1024px_Cross_red_circle_svg {
+            get {
+                object obj = ResourceManager.GetObject("1024px-Cross_red_circle.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1024px_Cross_red_circle1 {
+            get {
+                object obj = ResourceManager.GetObject("1024px-Cross_red_circle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gmail_Icon {
             get {
                 object obj = ResourceManager.GetObject("Gmail_Icon", resourceCulture);

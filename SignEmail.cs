@@ -26,5 +26,45 @@ namespace gmail_sender_app
         {
 
         }
+
+        private void SignEmail_Load(object sender, EventArgs e)
+        {
+            lbl_email.Visible = false;
+        }
+
+        private void txt_email_Enter(object sender, EventArgs e)
+        {
+            lbl_email.Visible = true;
+        }
+
+        void login()
+        {
+            if (!string.IsNullOrWhiteSpace(txt_email.Text))
+            {
+                string email = txt_email.Text;
+                new SignPassword(email).Show();
+                this.Close();
+            }
+            else
+            {
+                errorProvider1.SetError(txt_email, "Enter email or phone");
+            }
+        }
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+            login();
+        }
+
+        private void txt_email_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_email.Text))
+                lbl_email.Visible = false;
+        }
+
+        private void txt_email_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                login();
+        }
     }
 }

@@ -51,11 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmailSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailSender.Designer.cs">
+      <DependentUpon>EmailSender.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignEmail.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SignEmail.Designer.cs">
       <DependentUpon>SignEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignPassword.Designer.cs">
+      <DependentUpon>SignPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen.cs">
       <SubType>Form</SubType>
@@ -65,8 +77,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EmailSender.resx">
+      <DependentUpon>EmailSender.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignEmail.resx">
       <DependentUpon>SignEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignPassword.resx">
+      <DependentUpon>SignPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
@@ -102,6 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\google-icon-logo-simple-vector-filled-flat-google-icon-logo-solid-pictogram-isolated-white-background-159029191.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-Cross_red_circle.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-Cross_red_circle.svg1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
